@@ -8,7 +8,7 @@ public enum Priority {
 
 	public static Priority fromText(String priorityStr) {
 		try {
-			return valueOf(priorityStr.toUpperCase());
+			return valueOf(priorityStr.trim().toUpperCase());
 		}
 		catch (IllegalArgumentException iae) {
 			throw new IllegalArgumentException("Argument 'priorityStr' with value '" + priorityStr 

@@ -11,7 +11,7 @@ public class PriorityTest {
 		Priority priority = Priority.fromText("low");
 		assertEquals(Priority.LOW, priority);
 
-		priority = Priority.fromText("high");
+		priority = Priority.fromText("  high ");
 		assertEquals(Priority.HIGH, priority);
 	}
 
