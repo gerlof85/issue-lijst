@@ -16,8 +16,9 @@
 
 - [ ] JUnit test aanmaken
 
-- [ ] Add class Status
-- [ ] Add class ...
+- [x] Add class Status
+- [x] Add class Priority
+- [ ] Add class IssueType
 
 - [ ] Add class voor uitlezen csv file
 
