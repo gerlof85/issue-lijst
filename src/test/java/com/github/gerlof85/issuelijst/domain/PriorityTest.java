@@ -1,8 +1,10 @@
-package com.github.gerlof85.issuelijst;
+package com.github.gerlof85.issuelijst.domain;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import com.github.gerlof85.issuelijst.domain.Priority;
 
 public class PriorityTest {
 

@@ -1,4 +1,4 @@
-package com.github.gerlof85.issuelijst;
+package com.github.gerlof85.issuelijst.domain;
 
 import org.apache.commons.lang3.StringUtils;
 

@@ -1,7 +1,10 @@
-package com.github.gerlof85.issuelijst;
+package com.github.gerlof85.issuelijst.domain;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
+
+import com.github.gerlof85.issuelijst.domain.Status;
 
 public class StatusTest {
 	
