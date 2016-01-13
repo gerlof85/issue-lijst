@@ -1,6 +1,6 @@
 package com.github.gerlof85.issuelijst;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
@@ -17,12 +17,12 @@ public class PriorityTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void fromTextNotKnow() {
+		String priorityStr = "unknown";
 		try {
-			Priority.fromText("help");
+			Priority.fromText(priorityStr);
 		}
 		catch (IllegalArgumentException iae) {
-			System.out.println(iae.getMessage());
-			assertEquals("Argument 'priorityStr' with value 'help' not a known priority. Known priorities [HIGH, MEDIUM, LOW].", iae.getMessage());
+			assertEquals("Argument 'priorityStr' with value '" + priorityStr + "' not a known priority. Known priorities [HIGH, MEDIUM, LOW, EXTRA_LOW].", iae.getMessage());
 			throw iae;
 		}
 	}
