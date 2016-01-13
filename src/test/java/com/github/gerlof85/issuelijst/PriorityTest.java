@@ -16,6 +16,15 @@ public class PriorityTest {
 	}
 
 	@Test(expected = IllegalArgumentException.class)
+	public void fromTextNull() {
+		Priority.fromText(null);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	public void fromTextSpaces() {
+		Priority.fromText(" \t ");
+	}
+
+	@Test(expected = IllegalArgumentException.class)
 	public void fromTextNotKnow() {
 		String priorityStr = "unknown";
 		try {
