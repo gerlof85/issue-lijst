@@ -19,7 +19,7 @@
 - [x] Add class Status
 - [x] Add class Priority
 - [x] Add class IssueType
-- [ ] Add class IssueId
+- [x] Add class IssueId
 - [ ] Add class Issue (elk issue komt in afzonderlijk object)
 
 - [ ] Add class voor uitlezen csv file
