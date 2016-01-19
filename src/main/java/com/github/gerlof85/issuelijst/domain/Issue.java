@@ -5,25 +5,35 @@ import static org.junit.Assert.assertEquals;
 import java.util.Date;
 
 public class Issue {
-private static Object Status;
 // declaraties
 private final String issueId;
 private final String creationDate;
-private final String description;
+private String description;
+private Status status;
+private final Priority priority;
+private final IssueType issueType;
 
 	// constructor
 	//String issueId, Enum issueType, Enum priority, String status, Date creationDate, String description
 	public Issue (String issueId, IssueType bug, Priority medium, String statusNaam, String creationDate, String description) {
 		this.issueId = issueId;
-		IssueType issueType = IssueType.BUG;
-		Priority priority = Priority.MEDIUM;
-		Status status = new Status("open");
+		issueType = IssueType.BUG;
+		priority = Priority.MEDIUM;
+		status = new Status("open");
 		this.creationDate = creationDate;
 		this.description = description;
 	}
 
 	public String getIssueId() {
 		return "sample";   //vraag: hoe hier de waarde van issueID te returnen?
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
 	}
 
 	public IssueType getIssueType() {
@@ -35,8 +45,11 @@ private final String description;
 	}
 	
 	public Status getStatus() {
-		//return Issue.Status.getClass().getName();
-		return null;
+		return status;
+	}
+	
+	public String getStatusString(){
+		return status.getName();
 	}
 	
 	public String getCreationDate() {

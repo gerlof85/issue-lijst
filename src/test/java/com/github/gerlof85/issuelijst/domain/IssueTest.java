@@ -13,11 +13,11 @@ public class IssueTest {
 	//goedsituatie
 	@Test
 	public void create() throws Exception {
-		Issue isseu = new Issue(IssueId.class.getName(),IssueType.BUG,Priority.MEDIUM,Status.class.getName(),"18-01-2016","Omschrijving eerste bug");
+		Issue issue = new Issue(IssueId.class.getName(),IssueType.BUG,Priority.MEDIUM,Status.class.getName(),"18-01-2016","Omschrijving eerste bug");
 		//assertEquals("sample-11", isseu.getIssueId());
-		assertEquals(IssueType.BUG, isseu.getIssueType());
-		assertEquals(Priority.MEDIUM, isseu.getPriority());
-		//assertEquals(Status.class.getName(), isseu.getStatus());
+		assertEquals(IssueType.BUG, issue.getIssueType());
+		assertEquals(Priority.MEDIUM, issue.getPriority());
+		assertEquals("open", issue.getStatusString());
 	}
 
 	/*
