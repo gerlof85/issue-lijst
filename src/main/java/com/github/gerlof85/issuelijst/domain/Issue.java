@@ -25,7 +25,7 @@ private final IssueType issueType;
 	}
 
 	public String getIssueId() {
-		return "sample";   //vraag: hoe hier de waarde van issueID te returnen?
+		return issueId;   //vraag: hoe hier de waarde van issueID te returnen?
 	}
 
 	public void setDescription(String description) {
